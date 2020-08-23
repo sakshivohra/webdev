@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html>
+  <head>      
+    <link rel="stylesheet" href="style.css">    
+    <title>Speed Typer</title>
+  </head>
+  <body>            
+        <form id="settings-form">          
+            <label for="difficulty">Difficulty</label>
+            <select id="difficulty">
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>          
+        </form>     
+    <div class="container">
+      <h2>👩‍💻😊 Speed Typer 👨‍💻</h2>
+      <small>Type the following:</small>
+      <h1 id="word"></h1>
+      <input
+        type="text"
+        id="text"
+        autocomplete="off"
+        placeholder="Type the word here..."
+        autofocus
+      />
+      <p>Time left: <span id="time">10s</span></p>
+      <p>Score: <span id="score">0</span></p> 
+      <div id="end-game-container" class="end-game-container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
